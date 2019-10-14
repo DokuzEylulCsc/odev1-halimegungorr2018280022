@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title> 2018280022 Halime GÜNGÖR </title>
+<body>
+<h1> 2018280022 Halime GÜNGÖR </hq1>
+<h2>2019 Güz Döneminin ilk ödevi</h2>
+<label for="id1">Metin kutusu 1</label>
+<input type='text' onkeypress='return event.charCode>= 48 &&event.charCode<= 57' id='id1' />
+<br>
+<label for="id2">Metin kutusu 2</label>
+<input type='text' onkeypress='return event.charCode>= 48 &&event.charCode<= 57' id='id2' />
+<br><br>
+<button onclick="topla()">Topla</button>
+<br><br>
+<script>
+
+function topla()
+{
+	var a=document.getElementById("id1").value;
+	var b=document.getElementById("id2").value;
+	var toplam= Number(a)+ Number(b);
+	alert("Toplam:"+toplam);
+}
+function yapistir()
+{
+	var a=document.getElementById("id3").value;
+	var b=document.getElementById("id4").value;
+	var toplam= a +" "+ b;
+	alert("Yapýþýk: "+toplam);
+}
+
+</script>
+<label for="id3">Metin kutusu 3</label>
+<input type='text' id='id3' />
+<br>
+<label for="id4">Metin kutusu 4</label>
+<input type='text' id='id4' />
+<br><br>
+<button onclick="yapistir()">Yapýþtýr</button>
+</body>
+</html>
